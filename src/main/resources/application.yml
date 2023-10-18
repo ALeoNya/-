@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/secondhandcars3?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: 136601
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: 1E6Y01CCCp
+    pool:
+      max-idle: 16
+      max-active: 32
+      min-idle: 8
+      timeout: 3000
+  # rabbitmq
+  # redis
+
+server:
+  address: localhost
+  port: 8080
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
